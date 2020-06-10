@@ -1,6 +1,7 @@
 Features : 
 - The automation runs in RobotFramework for Selenium in Python programming language
 - The test file can be seen in the `/legalmatch/tests/homepage/TestHomePage.robot`
+- Has own `chromedriver` and `geckodriver` versions within the repository so you won't need to install it
 - This has the capability to run your `chrome` and/or `firefox` regardless of your platform (Mac, Linux or Windows) 
 - This generates a report log after the execution. The log can be seen in the root directory (`/legalmatch`)
 - The report consists of 3 files : 
