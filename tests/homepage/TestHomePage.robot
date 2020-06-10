@@ -1,6 +1,6 @@
 *** Settings ***
-Library     Homepage.py
-Suite Teardown
+Library     Homepage.py  browser=chrome
+
 
 *** Test Cases ***
 Successfully perform a test against the home page

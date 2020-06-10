@@ -17,6 +17,7 @@ from robot.api.deco import keyword
 import random
 import time
 
+
 class Homepage(object):
 
     def __init__(self, browser='chrome'):
@@ -29,6 +30,7 @@ class Homepage(object):
         self.random_category_text = None
 
     def open_browser(self, url: str = 'https://qa8.legalmatch.com/'):
+
         self.driver = config.Config().get_browser(self.browser)
         self.driver.maximize_window()
         self.driver.get(url)
@@ -67,7 +69,8 @@ class Homepage(object):
         try:
             assert self.func.element_contains_text(elements.Homepage.lbl_legend, split_text[0]) is True
         except AssertionError:
-            print("Assertion failed. There are no '{}' in the label.".format(self.random_category_text))
+            found_text = self.driver.find_element_by_xpath(elements.Homepage.lbl_legend).text
+            print("Assertion failed. There are no '{}' in the label; found '{}' instead".format(self.random_category_text, found_text))
         self.driver.back()
         assert self.driver.current_url == "https://qa8.legalmatch.com/"
 
