@@ -12,9 +12,6 @@ class Functions(object):
     def __init__(self, driver=None):
         self.driver = driver
 
-    def click_element(self, elem=None):
-        pass
-
     def element_contains_text(self, element=None, text=None) -> bool:
         extracted_text = self.driver.find_element_by_xpath(element).text
 

@@ -51,7 +51,3 @@ class Firefox(object):
         browser_name = 'geckodriver.exe'
 
     PATH = 'drivers/{platform}/{browser_name}'.format(platform=Platform.get_platform(), browser_name=browser_name)
-
-
-if __name__ == '__main__':
-    pass

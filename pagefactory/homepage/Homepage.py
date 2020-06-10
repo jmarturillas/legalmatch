@@ -67,7 +67,4 @@ class Homepage(object):
 
 
 if __name__ == '__main__':
-    # Homepage.category_choice(is_random=True)
-    # print(Homepage.chosen_category)
-
     print(Homepage.category_list())

@@ -102,8 +102,3 @@ class Homepage(object):
 
     def assert_meta_tag(self, meta=None):
         assert meta in self.driver.page_source
-
-
-
-
-

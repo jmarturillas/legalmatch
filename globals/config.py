@@ -30,6 +30,3 @@ class Config(object):
 if __name__ == '__main__':
     c = Config()
     c.get_browser('firefox')
-
-
-
