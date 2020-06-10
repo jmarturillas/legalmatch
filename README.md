@@ -17,10 +17,10 @@ Requirements :
 Installation : 
 
 - Clone the repository
+- `cd` to repository's root directory (`/legalmatch`)
 - Run `pip install -r requirements.txt`
 
 Running the test : 
-- `cd` to `legalmatch/tests/homepage/`
 - Run `robot --variable browser:chrome  ./tests/homepage/TestHomePage.robot`
 - If you prefer to run it with Firefox, just change the value of `browser` variable to `firefox` as in `browser:firefox`
 - The browser will open and do as what the steps in the exam requires. (please see the `TestHomePage.robot` for the reference of the keywords being run)
